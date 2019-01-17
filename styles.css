@@ -1,0 +1,86 @@
+body {
+    background-color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resume {
+    display: grid;
+    background-color:white;
+    width: 210mm;
+    height: 297mm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-template-areas: "name info" "summary skills" "education languages" "projects experience";
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .5fr 2fr 2fr 2fr;
+
+}
+#name {
+    font-size: 4em;
+    grid-area:name;
+    background-color:rosybrown;
+    color: grey;
+    text-align:center;
+    padding-left:.5em;
+}
+
+#contact a {
+    text-decoration: none;
+    color: grey;
+}
+#contact {
+    font-size: 1em;
+    background-color:rosybrown;
+    color:grey;
+    grid-area: info;
+    text-align:right;
+    padding-right:1.2em;
+}
+
+li {
+    font-family: 'Merriweather', serif;
+    margin-bottom:1.2em;
+}
+.title {
+    font-weight: bold;
+    font-stretch:ultra-expanded;
+    font-family: 'Open Sans', sans-serif;
+    color:lightskyblue;
+    font-size: 1.2em;
+}
+#summary {
+    grid-area: summary;
+    background-color:steelblue;
+}
+
+.edu-date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+#skills {
+    grid-area: skills;
+    background-color:green;
+}
+
+#education {
+    grid-area: education;
+    background-color:rebeccapurple;
+}
+
+#languages {
+    grid-area: languages;
+    background-color:cadetblue;
+}
+
+#projects {
+    background-color:darkgoldenrod;
+    grid-area:projects;
+}
+
+#experience {
+    background-color:firebrick;
+    grid-area:experience;
+}
